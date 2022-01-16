@@ -8,6 +8,7 @@ const vaccined= document.querySelector('.vaccined');
 const update = document.querySelector('.update');
 
 
+
 const URL_API = 'https://covid-api.mmediagroup.fr/v1'
 
 const API_COUNTRY = '/cases?country='
@@ -50,9 +51,11 @@ axios.get(link2).then(res => {
 .catch(err => console.log ('błąd'))
 }
 
-//btn.addEventListener('click', () => getCovid())
+btn.addEventListener('click', () => getCovid())
 btn.addEventListener('click', () => result.style.display = 'grid');
 btn.addEventListener('mousedown', () => btn.classList.add('clickButton'));
 btn.addEventListener('mouseup', () => btn.classList.remove('clickButton'));
 btn.addEventListener('touchstart', () => btn.classList.add('clickButton'));
 btn.addEventListener('touchend', () => btn.classList.remove('clickButton'));
+
+

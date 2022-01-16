@@ -110,6 +110,7 @@ button {
 
 .results {
   grid-area: results;
+  position: relative;
 }
 
 .Names {
