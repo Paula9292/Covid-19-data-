@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(48, 50, 47, 0.555357) 7%, rgba(48, 50, 47, 0.555357) 94%), url("/img/coronavirus-standard.jpg");
+  background-position: 37% 0%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media (min-width: 1920px), (min-height: 1070px) {
+  body {
+    background: linear-gradient(180deg, rgba(48, 50, 47, 0.555357) 7%, rgba(48, 50, 47, 0.555357) 94%), url("/img/coronavirus-large.jpg");
+    background-position: 37% 0%;
+  }
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 480px;
+  max-width: 90vw;
+  height: 250px;
+  background: #fff;
+  margin-top: 5vh;
+  padding: 13px;
+  box-shadow: 0px 0px 15px #050000;
+}
+
+label {
+  margin-bottom: 30px;
+  font-weight: 600;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.search input {
+  width: 200px;
+  height: 25px;
+  padding-left: 7px;
+  border-radius: 13px;
+  background-color: #fefefe;
+  border-top: 1px solid #d6d1d1;
+  border-left: 1px solid #d6d1d1;
+  border-right: 1px solid #63606036;
+  border-bottom: 1px solid #63606036;
+  box-shadow: 2px 2px 2px #919090, -2px -2px 4px #eee8e8cb;
+  outline: none;
+}
+
+.search input:focus {
+  border-top: 2px solid #8a858585;
+  border-left: 2px solid #8a858585;
+  border-right: 2px solid #e0dbdb;
+  border-bottom: 2px solid #e0dbdb;
+  box-shadow: 1px 1px 2px #dddcdc inset, -3px -3px 5px #ffffff inset;
+}
+
+button {
+  width: 90px;
+  height: 30px;
+  margin-top: 30px;
+  box-shadow: 1px 1px 2px #073d3d, -2px -2px 4px #e5f2f2;
+  border-top: 1px solid #aababa;
+  border-left: 1px solid #aebaba;
+  border-right: 1px solid #6f9da1;
+  border-bottom: 1px solid #6f9da1;
+  border-radius: 20px;
+  background-color: #45b7c2;
+}
+
+.clickButton {
+  background-color: #44bbc7;
+  border-top: 2px solid #6f9da1;
+  border-left: 2px solid #6f9da1;
+  border-right: 2px solid #aababa;
+  border-bottom: 2px solid #aababa;
+  box-shadow: 1px 1px 2px #12444c inset, -3px -3px 5px #a0ebf7 inset;
+}
+
+.result {
+  background-color: #fff;
+  box-shadow: 0px 0px 15px #050000;
+  width: 480px;
+  max-width: 90vw;
+  height: 300px;
+  margin-top: 20px;
+  padding: 15px;
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.3fr 1fr 0.1fr;
+  grid-auto-flow: row;
+  grid-template-areas: "countryName countryName" "Names results" "update update";
+}
+
+.countryName {
+  grid-area: countryName;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.results {
+  grid-area: results;
+}
+
+.Names {
+  grid-area: Names;
+}
+
+.Names ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.result li {
+  list-style-type: none;
+  margin: 7px;
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+
+.result_result {
+  font-weight: 600;
+  margin-left: 20px;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Names li {
+  width: 117px;
+}
+
+img {
+  margin-right: 8px;
+}
+
+.update {
+  grid-area: update;
+  font-size: 0.9rem;
+}
+/*# sourceMappingURL=main.css.map */
