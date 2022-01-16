@@ -20,6 +20,34 @@ body {
   }
 }
 
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+  background-color: #69666630;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.loader-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-box div {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 8px;
+  background-color: #2db2a7;
+}
+
 .search {
   display: flex;
   flex-direction: column;

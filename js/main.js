@@ -6,6 +6,8 @@ const deaths = document.querySelector('.deaths');
 const result=document.querySelector('.result');
 const vaccined= document.querySelector('.vaccined');
 const update = document.querySelector('.update');
+const loader=document.querySelector('.loader')
+const loaderBox= document.querySelector('.loader-box');
 
 
 
@@ -59,3 +61,4 @@ btn.addEventListener('touchstart', () => btn.classList.add('clickButton'));
 btn.addEventListener('touchend', () => btn.classList.remove('clickButton'));
 
 
+window.addEventListener('load', () => loader.style.display = 'none', loaderBox.style.display = 'none');
