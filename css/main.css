@@ -8,14 +8,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(180deg, rgba(48, 50, 47, 0.555357) 7%, rgba(48, 50, 47, 0.555357) 94%), url("/img/coronavirus-standard.jpg");
+  background: linear-gradient(180deg, rgba(48, 50, 47, 0.555357) 7%, rgba(48, 50, 47, 0.555357) 94%), url("/Covid19-data/img/coronavirus-standard.jpg");
   background-position: 37% 0%;
   font-family: 'Open Sans', sans-serif;
 }
 
 @media (min-width: 1920px), (min-height: 1070px) {
   body {
-    background: linear-gradient(180deg, rgba(48, 50, 47, 0.555357) 7%, rgba(48, 50, 47, 0.555357) 94%), url("/img/coronavirus-large.jpg");
+    background: linear-gradient(180deg, rgba(48, 50, 47, 0.555357) 7%, rgba(48, 50, 47, 0.555357) 94%), url("/Covid19-data/img/coronavirus-large.jpg");
     background-position: 37% 0%;
   }
 }
