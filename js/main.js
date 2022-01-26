@@ -9,8 +9,6 @@ const update = document.querySelector('.update');
 const loader=document.querySelector('.loader')
 const loaderBox= document.querySelector('.loader-box');
 
-
-
 const URL_API = 'https://covid-api.mmediagroup.fr/v1'
 
 const API_COUNTRY = '/cases?country='
