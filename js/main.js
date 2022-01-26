@@ -50,11 +50,24 @@ axios.get(link2).then(res => {
     vaccined.textContent= vaccinedRes
 })
 
-.catch(err => console.log ('błąd'))
+.catch(err => console.log ('błąd'));
+
+result.style.display = 'grid';
 }
 
 btn.addEventListener('click', () => getCovid())
-btn.addEventListener('click', () => result.style.display = 'grid');
+
+function enterKey(e){
+    if(e.key==='Enter'){
+        
+        let targetElement = e.target
+
+        if (targetElement == country){
+            getCovid();
+    }}
+    }
+
+window.addEventListener('keydown', (e) => enterKey(e) )
 btn.addEventListener('mousedown', () => btn.classList.add('clickButton'));
 btn.addEventListener('mouseup', () => btn.classList.remove('clickButton'));
 btn.addEventListener('touchstart', () => btn.classList.add('clickButton'));
